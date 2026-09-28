@@ -1,0 +1,74 @@
+body {
+    background-color: #cfd6e2;
+    font-family: Arial, sans-serif;
+    color: #333333;
+    line-height: 1.6;
+}
+
+h1,h2,h3 {
+    color: #1f3a5f;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+  text-align: center;
+  padding: 30px 20px;
+}
+
+section {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+nav ul {
+    display: flex; /* display flex :les éléments de la liste se placent côte à côte. */
+    flex-wrap: wrap; /*flex-wrap: wrap : autorise les éléments à passer à la ligne suivante quand il n'y a plus de place, au lieu de déborder.*/
+    justify-content: center;
+    gap: 20px; /* gap : espace entre les éléments.*/
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    color: #1f3a5f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover { /* hover : s'applique quand la souris passe sur le lien*/
+    text-decoration: underline;
+}
+
+html {
+    scroll-behavior: smooth; /* scroll-behavior: smooth : rend le défilement fluide. */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 600px) { /* @media (max-width: 600px) : « si l'écran fait 600 px de large ou moins ». */
+     main {
+        padding: 10px;
+    }
+
+    section {
+        padding: 15px;
+    }
+
+    h1 {
+        font-size: 1.6rem; /* rem : une unité relative à la taille de texte de base, 1.6rem fait environ 1,6 fois la taille normale.*/
+    }
+
+    nav ul {
+        gap: 10px 15px; /* gap: 10px 15px : 10 px entre les lignes, 15 px entre les colonnes.*/
+    }
+}
